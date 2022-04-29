@@ -31,8 +31,12 @@ function addHTML(stringArray) {
     }
     // Key attributes as unordered list elements
     if (!el.toLowerCase().includes("najważniejsze cechy") && afterH2) {
-      formatted += `<li>${el}</li>
+      if (el === "" || el === " ") {
+        formatted += "";
+      } else {
+        formatted += `<li>${el}</li>
 `;
+      }
     }
   });
   // Save textarea value to localstorage
