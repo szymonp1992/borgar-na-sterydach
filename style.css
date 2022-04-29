@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+
+.description-fields {
+    display: flex;
+    justify-content: space-around;
+}
+
+h2 {
+    margin: 0.5rem;
+}
+
+textarea {
+    height: 60vh;
+    width: 40vw;
+    font-size: 1rem;
+    border: 2px solid black;
+    padding: 3px;
+}
+
+.preview {
+    margin: 1rem 25vw;
+    border: 2px solid black;
+    min-height: 30vh;
+}
+
+.preview h2 {
+    text-align: center;
+}
+
+.preview-text {
+    padding: 3px;
+}
+
+.preview-text h2 {
+    text-align: left;
+}
+
+.preview-text li {
+    margin: 20px;
+}
