@@ -24,7 +24,7 @@ textarea {
 
 .preview {
     margin: 1rem 25vw;
-    border: 2px solid darkgreen;
+    border: 3.5px solid darkgreen;
     min-height: 30vh;
 }
 
@@ -34,7 +34,7 @@ textarea {
 }
 
 .preview-text {
-    padding: 3px;
+    padding: 4px;
 }
 
 .preview-text p {
