@@ -36,6 +36,10 @@ textarea {
     padding: 3px;
 }
 
+.preview-text p {
+    margin-top: 0.6rem;
+}
+
 .preview-text h2 {
     text-align: left;
 }
