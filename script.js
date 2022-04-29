@@ -12,7 +12,7 @@ function addHTML(stringArray) {
   let afterH2 = false;
   let formatted = "";
   // Conditions under which paragraphs are being formatted
-  stringArray.map((el) => {
+  stringArray.map((el, i) => {
     // Normal paragraphs
     if (!el.toLowerCase().includes("najważniejsze cechy") && !afterH2) {
       if (el === "" || el === " ") {
@@ -38,11 +38,11 @@ function addHTML(stringArray) {
 `;
       }
     }
+    // Return finally formatted text with closed unordered list
+    if (formatted.includes("</li>") && i === stringArray.length - 1) {
+      formatted += `</ul>`;
+    }
   });
-  // Save textarea value to localstorage
-
-  // Return finally formatted text with closed unordered list
-  formatted += `</ul>`;
   return formatted;
 }
 
