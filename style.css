@@ -24,12 +24,13 @@ textarea {
 
 .preview {
     margin: 1rem 25vw;
-    border: 2px solid black;
+    border: 2px solid darkgreen;
     min-height: 30vh;
 }
 
 .preview h2 {
     text-align: center;
+    color: darkgreen;
 }
 
 .preview-text {
