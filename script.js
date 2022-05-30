@@ -23,8 +23,7 @@ function addHTML(stringArray) {
     }
     // H2 paragraph with key attributes
     if (el.toLowerCase().includes("najważniejsze cechy") && !afterH2) {
-      formatted += `<h2><span style="font-size: 18px;"><strong>${el}</strong></span></h2>
-<ul>`;
+      formatted += `<h2><span style="font-size: 18px;"><strong>${el}</strong></span></h2><ul>`;
       afterH2 = true;
     }
     // Key attributes as unordered list elements
