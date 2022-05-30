@@ -18,15 +18,13 @@ function addHTML(stringArray) {
       if (el === "" || el === " ") {
         formatted += "";
       } else {
-        formatted += `<p>${el}</p>
-`;
+        formatted += `<p>${el}</p>`;
       }
     }
     // H2 paragraph with key attributes
     if (el.toLowerCase().includes("najważniejsze cechy") && !afterH2) {
       formatted += `<h2><span style="font-size: 18px;"><strong>${el}</strong></span></h2>
-<ul>
-`;
+<ul>`;
       afterH2 = true;
     }
     // Key attributes as unordered list elements
@@ -34,8 +32,7 @@ function addHTML(stringArray) {
       if (el === "" || el === " ") {
         formatted += "";
       } else {
-        formatted += `<li>${el}</li>
-`;
+        formatted += `<li>${el}</li>`;
       }
     }
     // Return finally formatted text with closed unordered list
